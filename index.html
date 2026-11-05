@@ -2,6 +2,13 @@
 <html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Materi Belajar Ruangguru</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dafa &amp; Lulu - Komik dan Activity Book GRATIS">
+<meta property="og:description" content="Komik dan Activity Book edukatif untuk Kelas 1–6 SD. Download gratis, seri baru tiap pekan!">
+<meta property="og:image" content="https://ruanggurupwr-bot.github.io/2026/og/komik.jpg">
+<meta property="og:url" content="https://ruanggurupwr-bot.github.io/2026/">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
 :root{--bg1:#6fb4ee;--bg2:#b9f0ea;--card:#fff;--ink:#1d2b3a;--mute:#5b6b7b;--org:#f26f10;--teal:#17a2b0;--pur:#8a4fd6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#16365a;--bg2:#12504f;--card:#1f2c3a;--ink:#eef3f8;--mute:#a9b8c6}}
@@ -124,4 +131,9 @@ comic.render();book.render();
 [].forEach.call(document.querySelectorAll('.cta'),function(b){b.addEventListener('click',function(){[].forEach.call(document.querySelectorAll('.cta'),function(x){x.classList.remove('on')});b.classList.add('on');if(b.dataset.go)document.getElementById(b.dataset.go).scrollIntoView({behavior:'smooth'})})});
 var VIDEO_LINK="https://dafalulu.ruangguru.com/kelas-i";
 document.getElementById('nonton').onclick=function(){if(VIDEO_LINK)window.open(VIDEO_LINK,'_blank','noopener');else toast('Link video belum diisi')};
-</script></body></html>
+</script><script>
+// Buka langsung ke bagian tertentu dari link share (#s-comic, #s-book, #s-fitur)
+(function(){var h=location.hash.replace('#','');if(!/^s-(comic|book|fitur)$/.test(h))return;
+window.addEventListener('load',function(){setTimeout(function(){var e=document.getElementById(h);if(e)e.scrollIntoView({behavior:'smooth'})},300)})})();
+</script>
+</body></html>
